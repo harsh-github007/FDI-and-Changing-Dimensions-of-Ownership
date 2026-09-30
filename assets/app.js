@@ -101,8 +101,8 @@ function survey(d) {
   const label = r => `${r.theme === 'concern' ? '▲ ' : r.theme === 'benefit' ? '● ' : '◆ '}${SHORT[r.id]}`;
   const ds = (name, key, color, sign = 1) => ({ label: name, data: rows.map(r => sign * r[key]), backgroundColor: color, stack: 's', barPercentage: 0.8 });
   new Chart($('svChart'), { type: 'bar', data: { labels: rows.map(label), datasets: [
-    ds('Disagree', 'disagree', '#e6907c', -1), ds('Strongly disagree', 'strongly_disagree', css('--red'), -1),
-    ds('Neutral', 'neutral', css('--grey')), ds('Agree', 'agree', '#7fb2e5'), ds('Strongly agree', 'strongly_agree', css('--blue')),
+    ds('Disagree', 'disagree', '#7aa7ff', -1), ds('Strongly disagree', 'strongly_disagree', '#3b6fd8', -1),
+    ds('Neutral', 'neutral', css('--grey')), ds('Agree', 'agree', '#ffa27a'), ds('Strongly agree', 'strongly_agree', css('--blue')),
   ] }, options: { ...baseOpts(), indexAxis: 'y',
     scales: { x: { stacked: true, min: -40, max: 100, ticks: { maxTicksLimit: narrow() ? 5 : 10, callback: v => `${Math.abs(v)}%` } },
       
