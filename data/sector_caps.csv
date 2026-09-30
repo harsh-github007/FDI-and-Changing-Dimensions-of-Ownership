@@ -1,0 +1,38 @@
+sector,group,cap_pct,route,note
+Agriculture and animal husbandry,Primary,100,Automatic,"Floriculture, horticulture, seeds, fisheries and similar activities"
+"Plantations (tea, coffee, rubber, cardamom, palm oil, olive oil)",Primary,100,Automatic,
+Mining and coal,Primary,100,Automatic,Coal mining for sale opened to 100% automatic in 2019
+Petroleum and natural gas,Primary,100,Automatic,Refining by public-sector companies capped at 49% unless they are being privatised
+Manufacturing,Manufacturing,100,Automatic,Includes contract manufacturing
+Defence manufacturing,Manufacturing,100,74% automatic; above 74% government,Above 74% where it brings modern technology
+Pharmaceuticals (new plants),Manufacturing,100,Automatic,
+Pharmaceuticals (existing companies),Manufacturing,100,74% automatic; above 74% government,
+"Trading of food products made in India, incl. e-commerce",Retail and trade,100,Government,
+Single-brand retail,Retail and trade,100,Automatic,30% local sourcing required above 51% foreign ownership
+Multi-brand retail,Retail and trade,51,Government,Minimum investment of US$100 million
+E-commerce marketplace,Retail and trade,100,Automatic,"Holding inventory is not allowed, except for exports of goods made in India (2026)"
+Construction development,Real estate and infrastructure,100,Automatic,Real estate business (dealing in land and buildings) is prohibited
+Railway infrastructure,Real estate and infrastructure,100,Automatic,
+Airports,Real estate and infrastructure,100,Automatic,
+Scheduled airlines,Transport,100,49% automatic; above 49% government,100% automatic for non-resident Indians; foreign airlines up to 49%
+Telecom services,Telecom and media,100,Automatic,Fully automatic since 2021
+Satellite manufacturing and operation,Space,100,74% automatic; above 74% government,Space policy of 2024
+Launch vehicles and spaceports,Space,100,49% automatic; above 49% government,Space policy of 2024
+Satellite components and systems,Space,100,Automatic,Space policy of 2024
+TV channels (non-news) and cable networks,Telecom and media,100,Automatic,
+TV news channels,Telecom and media,49,Government,
+FM radio,Telecom and media,49,Government,
+Newspapers and news magazines,Telecom and media,26,Government,
+Digital news media,Telecom and media,26,Government,
+Private-sector banks,Financial services,74,49% automatic; 49–74% government,
+Public-sector banks,Financial services,20,Government,
+Insurance companies,Financial services,100,Automatic,Raised from 74% by the Sabka Bima Sabki Raksha Act of December 2025
+Insurance intermediaries,Financial services,100,Automatic,
+Stock exchanges and depositories,Financial services,49,Automatic,
+Power exchanges,Financial services,49,Automatic,
+Private security agencies,Services,74,49% automatic; 49–74% government,
+"Lottery, gambling and betting",Prohibited,0,Prohibited,
+Chit funds and Nidhi companies,Prohibited,0,Prohibited,
+Real estate business and trading in development rights,Prohibited,0,Prohibited,
+"Cigars, cigarettes and tobacco substitutes",Prohibited,0,Prohibited,
+Atomic energy and railway operations,Prohibited,0,Prohibited,Closed to private investment

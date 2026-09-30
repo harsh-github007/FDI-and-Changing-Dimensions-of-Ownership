@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>India FDI and Foreign Ownership</title>
+  <meta name="description" content="Foreign direct investment into India since 2000: how much comes in and goes out, from where, into which sectors, and how much of each sector foreigners may own.">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232a78d6'/><circle cx='16' cy='16' r='8' stroke='white' stroke-width='2.5' fill='none'/><path d='M8 16h16M16 8c-4 4-4 12 0 16M16 8c4 4 4 12 0 16' stroke='white' stroke-width='2' fill='none'/></svg>">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <h1>India FDI and Foreign Ownership</h1>
+      <p class="lede">How much foreign direct investment comes into India and how much leaves, where it comes from, which sectors it goes to, and how much of each sector foreign investors are allowed to own.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="result" id="loadError" hidden></p>
+
+    <section class="panel" aria-labelledby="inHead">
+      <h2 id="inHead">Money coming in</h2>
+      <div class="kpis">
+        <div class="kpi"><span id="kYearLabel">FDI inflow</span><b id="kTotal">–</b><small id="kGrowth"></small></div>
+        <div class="kpi"><span>of which new equity</span><b id="kEquity">–</b><small>the rest is reinvested earnings and other capital</small></div>
+        <div class="kpi"><span>Net FDI</span><b id="kNet">–</b><small id="kNetNote"></small></div>
+        <div class="kpi"><span>Inflows since April 2000</span><b id="kCum">–</b><small>total FDI, 26 financial years</small></div>
+      </div>
+      <h3>FDI inflows by financial year</h3>
+      <div class="chart"><canvas id="yearChart" aria-label="FDI inflows by financial year"></canvas></div>
+      <details>
+        <summary>Year-by-year table</summary>
+        <div class="scroll"><table class="tbl" id="yearTable"></table></div>
+      </details>
+    </section>
+
+    <section class="panel" aria-labelledby="outHead">
+      <h2 id="outHead">Money going out</h2>
+      <p class="muted small">Gross inflows are only half the story. Foreign investors also take money out, by selling stakes to Indian buyers or in share sales on the stock market, and Indian companies invest abroad. What is left is net FDI.</p>
+      <div class="chart small-chart"><canvas id="netChart" aria-label="Gross FDI, repatriation, outward FDI and net FDI"></canvas></div>
+      <p class="result" id="netResult"></p>
+    </section>
+
+    <div class="grid2">
+      <section class="panel" aria-labelledby="ctyHead">
+        <h2 id="ctyHead">Where it comes from</h2>
+        <div class="chips" role="group" aria-label="Period">
+          <button class="chip" data-view="cum" aria-pressed="true">Since 2000</button>
+          <button class="chip" data-view="fy26" aria-pressed="false">2025-26</button>
+        </div>
+        <div class="chart"><canvas id="ctyChart" aria-label="FDI equity inflows by country"></canvas></div>
+        <p class="muted small">Mauritius and Singapore are mostly routes, not sources: funds from elsewhere invest through them because of tax treaties.</p>
+      </section>
+      <section class="panel" aria-labelledby="secHead">
+        <h2 id="secHead">Where it goes</h2>
+        <div class="chips" role="group" aria-label="Period">
+          <button class="chip" data-view="cum" aria-pressed="true">Since 2000</button>
+          <button class="chip" data-view="fy26" aria-pressed="false">2025-26</button>
+        </div>
+        <div class="chart"><canvas id="secChart" aria-label="FDI equity inflows by sector"></canvas></div>
+        <p class="muted small">"Services" covers finance, banking, insurance, outsourcing, R&amp;D and testing.</p>
+      </section>
+    </div>
+
+    <section class="panel" aria-labelledby="capHead">
+      <h2 id="capHead">How much can foreign investors own?</h2>
+      <p class="muted small">Each sector has a cap on foreign ownership. Under the <b>automatic route</b> no approval is needed; the <b>government route</b> needs the ministry's approval. Since April 2020, any investment from a country sharing a land border with India needs approval whatever the sector.</p>
+      <div class="inputs">
+        <label>Search sectors<input id="capSearch" type="search" placeholder="e.g. insurance, retail, space"></label>
+        <label>Group<select id="capGroup"><option value="">All groups</option></select></label>
+      </div>
+      <div class="scroll"><table class="tbl" id="capTable"></table></div>
+      <p class="muted small" id="capCount"></p>
+      <details>
+        <summary>How the limits have changed since 1991</summary>
+        <ul class="timeline" id="timeline"></ul>
+      </details>
+    </section>
+
+    <section class="panel" aria-labelledby="svHead">
+      <h2 id="svHead">What employees of multinationals think</h2>
+      <p class="muted small">100 employees of multinational companies in India rated 14 statements about FDI. Most agreed with the benefits and with the concerns, so the survey shows how widely both views are held rather than which one wins. <a href="https://github.com/harsh-github007/FDI-and-Changing-Dimensions-of-Ownership/blob/main/survey/results.md">Full results</a>.</p>
+      <div class="chart tall-chart"><canvas id="svChart" aria-label="Survey answers to 14 statements about FDI"></canvas></div>
+    </section>
+
+    <section class="panel small muted">
+      Sources: inflows by year, country and sector from DPIIT FDI factsheets (to June 2025) and DPIIT data for 2025-26 as reported by India Briefing and the Ministry of Finance; net FDI from RBI data reported by Business Standard; ownership limits from DPIIT's consolidated FDI policy and later press notes, the space policy of 2024, the Sabka Bima Sabki Raksha Act of 2025 and the Cabinet decision of 10 March 2026. Limits are summarised; check the current DPIIT policy before investing. Full list in the <a href="https://github.com/harsh-github007/FDI-and-Changing-Dimensions-of-Ownership/blob/main/research/fdi-and-changing-dimensions-of-ownership.md">research paper</a>.
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <span>Data to March 2026, policy to September 2026.</span>
+    <a href="https://github.com/harsh-github007/FDI-and-Changing-Dimensions-of-Ownership">Source, data and research on GitHub</a>
+  </footer>
+
+  <script src="assets/vendor/chart.umd.js"></script>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

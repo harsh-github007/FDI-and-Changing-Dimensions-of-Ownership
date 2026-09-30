@@ -1,0 +1,6 @@
+{
+  "name": "fdi-and-changing-dimensions-of-ownership",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test tests/data.test.mjs" }
+}

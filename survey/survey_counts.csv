@@ -1,0 +1,15 @@
+id,statement,theme,strongly_agree,agree,neutral,disagree,strongly_disagree
+Q1,FDI enhances the competitiveness of domestic industries.,benefit,32,39,11,12,6
+Q2,FDI leads to a more diversified ownership structure in domestic markets.,benefit,30,41,9,14,6
+Q3,FDI contributes to technological advancements and innovation in domestic industries.,benefit,29,42,10,11,8
+Q4,The involvement of foreign-owned companies in domestic markets positively impacts overall economic growth.,benefit,25,40,9,16,10
+Q5,FDI undermines the autonomy of local businesses.,concern,26,38,12,17,7
+Q6,FDI leads to the concentration of ownership in the hands of a few multinational corporations.,concern,28,39,9,19,5
+Q7,Government policies should prioritize attracting FDI over protecting domestic industries.,policy,31,35,11,15,8
+Q8,FDI fosters knowledge transfer and skill development within domestic workforce.,benefit,30,36,12,14,8
+Q9,The rise of FDI results in the displacement of local businesses.,concern,29,46,12,8,5
+Q10,FDI encourages collaboration and partnership between domestic and foreign entities.,benefit,35,40,10,9,6
+Q11,FDI leads to a loss of control over key industries within a country.,concern,28,42,8,17,5
+Q12,FDI promotes economic diversification and resilience in domestic markets.,benefit,19,40,11,16,14
+Q13,FDI facilitates access to global markets for domestic businesses.,benefit,23,38,14,13,12
+Q14,FDI undermines national sovereignty by allowing foreign entities to exert influence over local economies.,concern,15,46,12,15,12
