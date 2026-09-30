@@ -1,3 +1,13 @@
 __pycache__/
 .DS_Store
 node_modules/
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz

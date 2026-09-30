@@ -3,7 +3,7 @@
 How foreign direct investment into India, and the rules on how much of an Indian business foreigners may own, have changed since 2000, with a survey of how employees of multinational companies see FDI's effects.
 
 **Dashboard:** https://harsh-github007.github.io/FDI-and-Changing-Dimensions-of-Ownership/
-**Research paper:** [FDI and Changing Dimensions of Ownership: Evidence from India, 2000–2026](research/fdi-and-changing-dimensions-of-ownership.md) ([PDF](research/fdi-and-changing-dimensions-of-ownership.pdf))
+**Research paper:** [FDI and Changing Dimensions of Ownership: Evidence from India, 2000–2026](research/fdi-and-changing-dimensions-of-ownership.pdf), written in the Springer Nature journal article format ([LaTeX source](research/fdi-and-changing-dimensions-of-ownership.tex))
 
 ## Key findings
 
@@ -51,6 +51,7 @@ python -m http.server 8000                 # then open http://localhost:8000
 npm test                                   # checks the data files and headline figures (Node 18+)
 python survey/analyze.py                   # re-run the survey analysis (pandas, matplotlib)
 python research/figures/make_figures.py    # redraw the paper's charts
+cd research && latexmk -pdf fdi-and-changing-dimensions-of-ownership.tex   # rebuild the paper (TeX Live)
 ```
 
 The site is static HTML, CSS and JavaScript with no build step; [Chart.js](https://www.chartjs.org/) is included in `assets/vendor/`. [`.github/workflows/pages.yml`](.github/workflows/pages.yml) publishes it to GitHub Pages on every push.
@@ -61,6 +62,6 @@ The site is static HTML, CSS and JavaScript with no build step; [Chart.js](https
 index.html, assets/     the dashboard
 data/                   FDI flows, countries, sectors, ownership limits and policy timeline (CSV)
 survey/                 survey counts, analysis script, results and chart
-research/               the research paper (Markdown and PDF) and its charts
+research/               the research paper (Springer Nature LaTeX source and PDF) and its charts
 tests/                  tests for the data files
 ```
