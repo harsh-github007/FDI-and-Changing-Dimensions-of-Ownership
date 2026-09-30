@@ -1,0 +1,3 @@
+research/sn-jnl.cls linguist-vendored
+research/*.bst linguist-vendored
+assets/vendor/** linguist-vendored
