@@ -54,7 +54,7 @@ python research/figures/make_figures.py    # redraw the paper's charts
 cd research && latexmk -pdf fdi-and-changing-dimensions-of-ownership.tex   # rebuild the paper (TeX Live)
 ```
 
-The site is static HTML, CSS and JavaScript with no build step; [Chart.js](https://www.chartjs.org/) is included in `assets/vendor/`. [`.github/workflows/pages.yml`](.github/workflows/pages.yml) publishes it to GitHub Pages on every push.
+The site is static HTML, CSS and JavaScript with no build step; [Chart.js](https://www.chartjs.org/) is included in `assets/vendor/`. GitHub Pages publishes it from the `main` branch on every push.
 
 ## Project layout
 
