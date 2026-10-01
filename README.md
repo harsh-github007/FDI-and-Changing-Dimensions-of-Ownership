@@ -5,6 +5,11 @@ How foreign direct investment into India, and the rules on how much of an Indian
 **Dashboard:** https://harsh-github007.github.io/FDI-and-Changing-Dimensions-of-Ownership/
 **Research paper:** [FDI and Changing Dimensions of Ownership: Evidence from India, 2000–2026](research/fdi-and-changing-dimensions-of-ownership.pdf), written in the Springer Nature journal article format ([LaTeX source](research/fdi-and-changing-dimensions-of-ownership.tex))
 
+
+![India investment research dashboard](assets/screenshot.png)
+
+An editorial navy-and-ivory interface guides readers from capital flows to investment destinations and ownership limits. Period controls compare cumulative and recent inflows; sector search and grouping help readers navigate the ownership table. Charts adapt to mobile screens, and section navigation respects reduced-motion preferences.
+
 ## Key findings
 
 - **Record inflows.** Total FDI inflows reached US$94.8 billion in 2025-26, up 18% on the year and 23 times the 2000-01 level.
